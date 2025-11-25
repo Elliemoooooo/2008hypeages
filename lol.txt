@@ -358,7 +358,7 @@ document.getElementById("header").src = "https://file.garden/Z5ZdT2XMBSWGuJym/ba
 
 document.body.background = "https://file.garden/Z5ZdT2XMBSWGuJym/background";
 
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#ffffff!important;}</style>";
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#404040!important;}</style>";
 
 e.HomeStateText = "Occupation:";
 
