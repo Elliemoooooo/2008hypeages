@@ -360,4 +360,70 @@ document.body.background = "https://file.garden/Z5ZdT2XMBSWGuJym/background";
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#ffffff!important;}</style>";
 
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#000000!important;}</style>";
+
+$("#game_window")[0].style.background = 
+  "linear-gradient(180deg, hsla(0,0%,0%,1) 32%, hsla(0,0%,38%,1) 100%)";
+
+corrr = `
+<div style="font-size: 11px; font-family: monospace; color: white;">
+<h2 style="font-style: normal;">
+  <img src="https://i.imgur.com/JNAkL0t.png" alt="Romney 2024" style="margin-top: 5px;">
+</h2>
+</div>
+`;
+
+
+function addDynamicCSS() {
+	var css = `
+  .campaign_trail_start_emphasis {
+    background-color: #000000;
+  }
+button {
+  background: black;
+  border: 1px solid #ffffff;
+  color: white;
+}
+
+select {
+  background: black;
+  border: 1px solid #ffffff;
+  color: white;
+
+}
+		#final_results_description h3 {
+			color: white;
+		}
+		#overall_details_container h3 {
+			color: white;
+		}
+		#overall_election_details h4 {
+			color: white;
+		}
+		#main_content_area_reading p {
+			color: white;
+		}
+		#main_content_area_reading h3.results_tab_header {
+			color: white;
+		}
+		.inner_window_w_desc h3 {
+			color: white;
+		}
+	p#credits {
+		color: white;
+	}
+	#final_results_description p {
+		color: white;
+	}
+	`;
+	var styleElem = document.createElement('style');
+	styleElem.type = 'text/css';
+
+	styleElem.appendChild(document.createTextNode(css));
+
+	document.head.appendChild(styleElem);
+}
+
+addDynamicCSS();
+
 //#endcode
