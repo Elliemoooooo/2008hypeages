@@ -1,0 +1,363 @@
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2008,
+            "display_year": "2008 - Clear Blue Sky",
+            "summary": "\n<p>Bob Graham, the man with the notebook, stepped into the Oval Office with the hope that methodical and managerial leadership could substitute a narrow vision and a lack of charisma. However, every day confronts the president with the weight of an office that he never truly asked for. He stepped into a house full of policies he meticulously tracks but consistently struggles to shape into meaning.</p>\n\n<p>Graham must face the messy and unpredictable demands of being president and leave a mark before the end of his presidency. If he fails to accomplish that, he'll be remembered as the calm before the storm.</p>",
+            "image_url": "https://file.garden/Z5ZdT2XMBSWGuJym/biden1",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "123",
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2008,
+        "is_premium": 0,
+        "display_year": "2008 - Clear Blue Sky"
+    }
+]
+
+campaignTrail_temp.credits = "ElectoralUK"
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1001,
+        "fields": {
+            "first_name": "Joseph R.",
+            "last_name": "Biden Jr.",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Current Senator from Delaware",
+            "priority": 1,
+            "description": "<div style='overflow-y:scroll;height:200px;'>Despite the grandfatherly appearance and his obsession with notebooks, Bob Graham is a man who is trying to convince himself that details mean vision, that process equals leadership, and that being correct about Iraq makes up for all the rest in which he was wrong. One of the things that best characterizes his victory is not that he was the most wanted candidate, but that he was the least like Dubya, a distinction that has turned out to be less charming in practice than in theory. The entirety of Graham's political identification with the character of being the sensible choice, the safe leader, the one who checks the facts while everybody else improvises, is thrown into question.</p>\n\n\n\nBut the four-year term in the Oval Office has exposed the emptiness of his political ideals and the divide between his know-how and his lack of purpose, except for the vague idea that someone must do it. Every morning, he lives the experience of being an impostor, with a White House that he got by mistake and full of notebooks with very detailed comments about a government that he never really wanted, and he is still trying to figure out how to make it work.</p>\n\n\n\nHe needs to convince himself that the qualities and not the charisma are what count, that the substance will triumph over the style, and that the Americans will eventually be grateful for having a president who sees the office as a very important middle management position. He is not allowed to be just a brief interlude between the disasters of the Republican Party, albeit that is exactly what he has become.</p></div>",
+            "color_hex": "#8b8bda",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://file.garden/Z5ZdT2XMBSWGuJym/biden",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1002,
+        "fields": {
+            "first_name": "Kathleen",
+            "last_name": "Sebelius",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Current Governor of Kansas",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://file.garden/Z5ZdT2XMBSWGuJym/SEBELIUS",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'>Chris Dodd is as far from President Graham as light is from darkness, being the complete opposites of similar things, silver-haired and soft-speaking, where Graham is shabbily dressed and clumsily spoken, a man of marble corridors and mahogany-lined offices who is seamlessly adjusting to Washington like a deep-sea fish to the rivers of his home. He can't stand the show-off character of contemporary politics, the kind of things that Graham would say, truly, like handshakes and smiles.</p>\n\n\n\nDodd pictures the most pleasing moments in his life not calling on towns or visiting factories, which are the images he would associate with his very well-meaning chief; instead, he would think about the moments of complete quiet when laws are formed behind closed doors, when the phone is rung and favors called in - that is when the real work of government is going on far away from cameras and notebooks.</p>\n\n\n\nHe is not going to be very happy with Graham's slow-going style and will, thereby, be used to seeing a lot of IOUs that he has been accumulating over the years turn into nothing, while relationships also become ghosts of the past. Four years back, Dodd took up the offer by Graham to be his vice president on the condition that he would have the power to influence domestic policy and use his connections in the Senate to facilitate a transformative Democratic agenda. As a result, he has been able to achieve a few victories quietly in the areas of banking regulation and healthcare reform.</p>\n\n\n\nNevertheless, Graham's obsession with process has almost made politics work impossible. The lions of the Senate no longer call him with the same eagerness as before. The donors and the lobbyists in his network that he had so carefully nurtured are getting impatient with Graham being at their mercy and squandering their investments. If nothing happens radically to change the course of events, Dodd will be forced to decide whether he wants to disappear into oblivion in Connecticut or make the move that he has been deliberating since election night in 2004, the one that would ensure that the right Democrat would eventually take up the Oval Office post.</p></div>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1003,
+        "fields": {
+            "first_name": "Wesley",
+            "last_name": "Clark",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Retired Army Officer",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://file.garden/Z5ZdT2XMBSWGuJym/CLARK",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'>Chris Dodd is as far from President Graham as light is from darkness, being the complete opposites of similar things, silver-haired and soft-speaking, where Graham is shabbily dressed and clumsily spoken, a man of marble corridors and mahogany-lined offices who is seamlessly adjusting to Washington like a deep-sea fish to the rivers of his home. He can't stand the show-off character of contemporary politics, the kind of things that Graham would say, truly, like handshakes and smiles.</p>\n\n\n\nDodd pictures the most pleasing moments in his life not calling on towns or visiting factories, which are the images he would associate with his very well-meaning chief; instead, he would think about the moments of complete quiet when laws are formed behind closed doors, when the phone is rung and favors called in - that is when the real work of government is going on far away from cameras and notebooks.</p>\n\n\n\nHe is not going to be very happy with Graham's slow-going style and will, thereby, be used to seeing a lot of IOUs that he has been accumulating over the years turn into nothing, while relationships also become ghosts of the past. Four years back, Dodd took up the offer by Graham to be his vice president on the condition that he would have the power to influence domestic policy and use his connections in the Senate to facilitate a transformative Democratic agenda. As a result, he has been able to achieve a few victories quietly in the areas of banking regulation and healthcare reform.</p>\n\n\n\nNevertheless, Graham's obsession with process has almost made politics work impossible. The lions of the Senate no longer call him with the same eagerness as before. The donors and the lobbyists in his network that he had so carefully nurtured are getting impatient with Graham being at their mercy and squandering their investments. If nothing happens radically to change the course of events, Dodd will be forced to decide whether he wants to disappear into oblivion in Connecticut or make the move that he has been deliberating since election night in 2004, the one that would ensure that the right Democrat would eventually take up the Oval Office post.</p></div>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1004,
+        "fields": {
+            "first_name": "Evan B.",
+            "last_name": "Bayh",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Current Senator from Indiana",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://file.garden/Z5ZdT2XMBSWGuJym/BAYH",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'>Chris Dodd is as far from President Graham as light is from darkness, being the complete opposites of similar things, silver-haired and soft-speaking, where Graham is shabbily dressed and clumsily spoken, a man of marble corridors and mahogany-lined offices who is seamlessly adjusting to Washington like a deep-sea fish to the rivers of his home. He can't stand the show-off character of contemporary politics, the kind of things that Graham would say, truly, like handshakes and smiles.</p>\n\n\n\nDodd pictures the most pleasing moments in his life not calling on towns or visiting factories, which are the images he would associate with his very well-meaning chief; instead, he would think about the moments of complete quiet when laws are formed behind closed doors, when the phone is rung and favors called in - that is when the real work of government is going on far away from cameras and notebooks.</p>\n\n\n\nHe is not going to be very happy with Graham's slow-going style and will, thereby, be used to seeing a lot of IOUs that he has been accumulating over the years turn into nothing, while relationships also become ghosts of the past. Four years back, Dodd took up the offer by Graham to be his vice president on the condition that he would have the power to influence domestic policy and use his connections in the Senate to facilitate a transformative Democratic agenda. As a result, he has been able to achieve a few victories quietly in the areas of banking regulation and healthcare reform.</p>\n\n\n\nNevertheless, Graham's obsession with process has almost made politics work impossible. The lions of the Senate no longer call him with the same eagerness as before. The donors and the lobbyists in his network that he had so carefully nurtured are getting impatient with Graham being at their mercy and squandering their investments. If nothing happens radically to change the course of events, Dodd will be forced to decide whether he wants to disappear into oblivion in Connecticut or make the move that he has been deliberating since election night in 2004, the one that would ensure that the right Democrat would eventually take up the Oval Office post.</p></div>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1005,
+        "fields": {
+            "first_name": "Barack H.",
+            "last_name": "Obama",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Current Senator from Illinois",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://file.garden/Z5ZdT2XMBSWGuJym/OBAMA",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'>Chris Dodd is as far from President Graham as light is from darkness, being the complete opposites of similar things, silver-haired and soft-speaking, where Graham is shabbily dressed and clumsily spoken, a man of marble corridors and mahogany-lined offices who is seamlessly adjusting to Washington like a deep-sea fish to the rivers of his home. He can't stand the show-off character of contemporary politics, the kind of things that Graham would say, truly, like handshakes and smiles.</p>\n\n\n\nDodd pictures the most pleasing moments in his life not calling on towns or visiting factories, which are the images he would associate with his very well-meaning chief; instead, he would think about the moments of complete quiet when laws are formed behind closed doors, when the phone is rung and favors called in - that is when the real work of government is going on far away from cameras and notebooks.</p>\n\n\n\nHe is not going to be very happy with Graham's slow-going style and will, thereby, be used to seeing a lot of IOUs that he has been accumulating over the years turn into nothing, while relationships also become ghosts of the past. Four years back, Dodd took up the offer by Graham to be his vice president on the condition that he would have the power to influence domestic policy and use his connections in the Senate to facilitate a transformative Democratic agenda. As a result, he has been able to achieve a few victories quietly in the areas of banking regulation and healthcare reform.</p>\n\n\n\nNevertheless, Graham's obsession with process has almost made politics work impossible. The lions of the Senate no longer call him with the same eagerness as before. The donors and the lobbyists in his network that he had so carefully nurtured are getting impatient with Graham being at their mercy and squandering their investments. If nothing happens radically to change the course of events, Dodd will be forced to decide whether he wants to disappear into oblivion in Connecticut or make the move that he has been deliberating since election night in 2004, the one that would ensure that the right Democrat would eventually take up the Oval Office post.</p></div>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1006,
+        "fields": {
+            "first_name": "Hillary R.",
+            "last_name": "Clinton",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Current Senator from New York",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://file.garden/Z5ZdT2XMBSWGuJym/CLINTON",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'>Chris Dodd is as far from President Graham as light is from darkness, being the complete opposites of similar things, silver-haired and soft-speaking, where Graham is shabbily dressed and clumsily spoken, a man of marble corridors and mahogany-lined offices who is seamlessly adjusting to Washington like a deep-sea fish to the rivers of his home. He can't stand the show-off character of contemporary politics, the kind of things that Graham would say, truly, like handshakes and smiles.</p>\n\n\n\nDodd pictures the most pleasing moments in his life not calling on towns or visiting factories, which are the images he would associate with his very well-meaning chief; instead, he would think about the moments of complete quiet when laws are formed behind closed doors, when the phone is rung and favors called in - that is when the real work of government is going on far away from cameras and notebooks.</p>\n\n\n\nHe is not going to be very happy with Graham's slow-going style and will, thereby, be used to seeing a lot of IOUs that he has been accumulating over the years turn into nothing, while relationships also become ghosts of the past. Four years back, Dodd took up the offer by Graham to be his vice president on the condition that he would have the power to influence domestic policy and use his connections in the Senate to facilitate a transformative Democratic agenda. As a result, he has been able to achieve a few victories quietly in the areas of banking regulation and healthcare reform.</p>\n\n\n\nNevertheless, Graham's obsession with process has almost made politics work impossible. The lions of the Senate no longer call him with the same eagerness as before. The donors and the lobbyists in his network that he had so carefully nurtured are getting impatient with Graham being at their mercy and squandering their investments. If nothing happens radically to change the course of events, Dodd will be forced to decide whether he wants to disappear into oblivion in Connecticut or make the move that he has been deliberating since election night in 2004, the one that would ensure that the right Democrat would eventually take up the Oval Office post.</p></div>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50000,
+        "fields": {
+            "first_name": "Mr",
+            "last_name": "Republicans",
+            "election": 20,
+            "party": "Turbo Team",
+            "state": "Idaho",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#c56d6d",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50001,
+        "fields": {
+            "first_name": "Mr",
+            "last_name": "Greens",
+            "election": 20,
+            "party": "Turbo Team",
+            "state": "Idaho",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#87b884",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50002,
+        "fields": {
+            "first_name": "Mr",
+            "last_name": "Libertarians",
+            "election": 20,
+            "party": "Turbo Team",
+            "state": "Idaho",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#f8fea9",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 109261,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 1002
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 118971,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 1003
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 151003,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 1004
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 118941,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 1005
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 113661,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 1006
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001,
+            50000,
+            50001,
+            50002
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001,
+            50000,
+            50001,
+            50002
+        ]
+    }
+]
+
+jet_data = {
+    "headerColor": "#ffffff",
+    "windowColor": "#e3e3e3",
+    "containerColor": "#FFFFFF",
+    "innerWindowColor": "#ffffff",
+    "bannerImageUrl": "https://file.garden/Z5ZdT2XMBSWGuJym/banner",
+    "backgroundImageUrl": "https://file.garden/Z5ZdT2XMBSWGuJym/background",
+    "endingTextColor": "#000000",
+    "customQuote": ""
+}
+
+//#startcode
+
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#ffffff";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#e3e3e3";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#FFFFFF";
+
+document.getElementById("header").src = "https://file.garden/Z5ZdT2XMBSWGuJym/banner";
+
+document.body.background = "https://file.garden/Z5ZdT2XMBSWGuJym/background";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#ffffff!important;}</style>";
+
+//#endcode
