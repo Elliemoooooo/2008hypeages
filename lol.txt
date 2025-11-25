@@ -1864,7 +1864,7 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
                 background-color: var(--player-bg); color: var(--text-primary); 
                 flex-grow: 1; min-width: 150px; height: auto; box-sizing: border-box; 
                 -webkit-appearance: none; -moz-appearance: none; appearance: none; 
-                background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%204%205%22%3E%3Cpath%20fill%3D%22%23555%22%20d%3D%22M2%200L0%202h4zm0%205L0%203h4z%22/%3E%3C/svg%3E'); 
+                background-image: url("https://media.discordapp.net/attachments/1208516580443426870/1431032028781871306/image.png?ex=68fbefee&is=68fa9e6e&hm=97c6f239be874fcc38f924d5b3b9ee49cd10af1441ae04a06ca952dae241f483&=&format=webp&quality=lossless&width=1376&height=928");
                 background-repeat: no-repeat; background-position: right 8px center; 
                 background-size: 8px 10px; padding-right: 25px; cursor:pointer; 
             }
