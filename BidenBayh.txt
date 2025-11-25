@@ -6,8 +6,9 @@ style_overwrite.innerHTML =
 }`
 ;
 document.head.appendChild(style_overwrite);
-campaignTrail_temp.questions_json = [
 
+campaignTrail_temp.questions_json = [
+    {
         "model": "campaign_trail.question",
         "pk": 130,
         "fields": {
