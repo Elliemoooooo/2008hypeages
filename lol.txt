@@ -360,6 +360,31 @@ document.body.background = "https://file.garden/Z5ZdT2XMBSWGuJym/background";
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#404040!important;}</style>";
 
+$("#game_window")[0].style.borderColor = "#151b47" 
+
+$("#game_window")[0].style.backgroundImage = "url(https://files.catbox.moe/8utyrb.png)"
+
+  // Select the node that will be observed for mutations
+  const windowsAdvisorTargetNode = document.getElementById("game_window");
+  
+  // Options for the observer (which mutations to observe)
+  const windowsAdvisorConfig = { attributes: true, childList: true, subtree: true };
+  
+  // Callback function to execute when mutations are observed
+  const callback = (mutationList, observer) => {
+      visitWindow = document.getElementsByClassName("overlay_window")[0];
+  
+      if(visitWindow == null || visitWindow.classList.contains("done")) {
+          return;
+      }
+      visitWindow.classList.add("done");
+      visitWindow.classList.add("window");
+      let titleBar = visitWindow.querySelector("h3");
+      titleBar.classList.add("title-bar");
+      titleBar.classList.add("title-bar-text")
+      titleBar.style.paddingLeft = "3px";
+  };
+
 e.HomeStateText = "Occupation:";
 
 corrr=`<img src='https://i.imgur.com/16dy7zl.png' width='100%'/><span id="after_button"></span>`;
