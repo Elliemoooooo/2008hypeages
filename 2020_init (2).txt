@@ -958,10 +958,10 @@ window.updateUI = updateUI;
 
   const songs = [
     new Song("The Less I Know The Better", "Tame Impala", "https://file.garden/Z5ZdT2XMBSWGuJym/tame", "https://audio.jukehost.co.uk/yW6mpR3SsdLBgBN60bdipBzyZS3sii07"),
-    new Song("No Ties", "Xiao Xiao", "https://images2.imgbox.com/16/9d/4XGAIUwM_o.png", "https://audio.jukehost.co.uk/5OVM75vLGAVBSkiP2F8Vln7CcWQdfxDQ"),
-    new Song("Yang Gang", "Ollie B and Max Ray", "https://images2.imgbox.com/43/54/jZKD9YG2_o.png", "https://audio.jukehost.co.uk/JXKBv1ZGVV3By9MsF3ekr0O6uUDe3k6X"),
-    new Song("Fight as One", "Eason Chan & Jolin Tsai", "https://images2.imgbox.com/96/94/wKBQVcuh_o.png", "https://audio.jukehost.co.uk/R5yUAGJa0nTtdzywhDhrJiM7iAEINNRlT"),
-    new Song("Buddy Holly", "Weezer", "https://images2.imgbox.com/a2/d6/8QdNz1S7_o.png", "https://audio.jukehost.co.uk/eWMsA6rGr8eoY1oNC9Wdazn2er4JkQFb"),
+    new Song("Sunshine", "TIEKS ft. Dan Harkna", "https://file.garden/Z5ZdT2XMBSWGuJym/sunshine", "https://audio.jukehost.co.uk/aQpmcQCipfSEJ98Z46Y7Db37SHfWLvWR"),
+    new Song("Sexual", "NEIKED", "https://file.garden/Z5ZdT2XMBSWGuJym/sexual", "https://audio.jukehost.co.uk/9UYJjqd6ELU8T3K8sxvdDj5iStcibi7B"),
+    new Song("Love Me Again", "John Newman", "https://file.garden/Z5ZdT2XMBSWGuJym/lovemeagain", "https://audio.jukehost.co.uk/ngGbhJs0Ja8SBVBidUZRwlh8TW17l2Jt"),
+    new Song("Can't Stand Losing You", "The Police", "https://file.garden/Z5ZdT2XMBSWGuJym/police", "https://audio.jukehost.co.uk/0ip30Rc3RvqHcNv0a9e1T59pKCB5zm6L"),
   ];
   songs.forEach(s => playlist.addSong(s));
 
