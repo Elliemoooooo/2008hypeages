@@ -957,6 +957,8 @@ function setupMusicPlayer() {
   playlist = new Playlist();
 
   const songs = [
+    new Song("The Less I Know The Better", "Tame Impala", "https://imgbox.com/52H8SgHp", "https://audio.jukehost.co.uk/yW6mpR3SsdLBgBN60bdipBzyZS3sii07"),
+  ];
     new Song("Freedom", "Beyonce", "https://images2.imgbox.com/d4/99/UQqU1kHP_o.png", "https://audio.jukehost.co.uk/Z8lWIiKMEyGn7IQOEVxL7SxxSRw7qgSJ"),
   ];
   songs.forEach(s => playlist.addSong(s));
