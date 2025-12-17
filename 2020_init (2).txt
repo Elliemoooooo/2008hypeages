@@ -511,34 +511,710 @@ campaignTrail_temp.temp_election_list = [
 ]
 
 jet_data = {
-    "headerColor": "#700016",
-    "windowColor": "#BFE6FF",
-    "containerColor": "#FFFFFF",
-    "innerWindowColor": "#E8FBFF",
+    "headerColor": "#000000",
+    "windowColor": "#000000ff",
+    "containerColor": "#000000ff",
+    "innerWindowColor": "#000000ff",
     "bannerImageUrl": "https://images2.imgbox.com/c5/a1/6uHMR3Bj_o.png",
     "backgroundImageUrl": "https://images2.imgbox.com/c2/34/tyQGVPAE_o.png",
     "endingTextColor": "#000000",
-    "customQuote": ""
+    "customQuote": "",
+    "gameTitle": "Let's WIN This!"
 }
 
 //#startcode
 
+corrr = `
+    <h2 style="
+        font-family: 'Plymouth Serial Heavy', 'Times New Roman', serif;
+        font-size: 48px;
+        letter-spacing: 2px;
+        text-align: center;
+        background: #fff8e5;
+        border-radius: 5px;
+    ">
+    <span style="color: #23278e;">1</span> 
+    <span style="color: #e73645;">0</span> 
+    <span style="color: #23278e;">7</span>
+    <span style="color: #e73645;">Days</span> 
+    </h2>
+`;
 
+// Set header color
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#1c58b7";
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#700016";
-
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#BFE6FF";
+// The window color should be transparent so the custom background image shows
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "transparent";
 
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 
+// Ensure the game window is transparent for the background image
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
 
-$(".container")[0].style.backgroundColor = "#FFFFFF";
+// Set the container color (the area around the game window)
+$(".container")[0].style.backgroundColor = "#ffffffff";
 
 document.getElementById("header").src = "https://images2.imgbox.com/c5/a1/6uHMR3Bj_o.png";
-
 document.body.background = "https://images2.imgbox.com/c2/34/tyQGVPAE_o.png";
 
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#E8FBFF!important;}</style>";
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#FFFFFF!important;}</style>";
+
+const _gameWindow = document.getElementById("game_window");
+if (_gameWindow) {
+    _gameWindow.style.border = "6px solid #1c58b7";
+    _gameWindow.style.borderRadius = "10px";
+    _gameWindow.style.backgroundImage = "url(https://images2.imgbox.com/71/e7/Hz00B3sn_o.png)";
+}
+
+e = campaignTrail_temp
+
+
+function appendStyle() {
+
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const metaTag = document.createElement('meta');
+        metaTag.name = "viewport";
+        metaTag.content = "width=device-width, initial-scale=1";
+        document.head.appendChild(metaTag);
+    }
+
+    // Custom styles here
+    if (!document.querySelector('#radio-option-style')) {
+        const style = document.createElement('style');
+        style.id = 'radio-option-style';
+        style.textContent = `
+			#election_description_window {
+				background-color: rgba(28, 88, 183, 1);
+				color: white;
+				height: 249px;
+                font-size: 16px;
+                font-family: Times New Roman;
+			}
+			#election_image {
+			  margin-left: 0px;
+			  margin-top: 0px;
+			  width: 400px;
+			  height: 400px;
+			  background-image: linear-gradient(to right, transparent, #1c58b7), url('https://images2.imgbox.com/3f/75/3J7jpPtg_o.png');
+			  background-size: cover;
+			  z-index: 1;
+			  background-position: center;
+			}
+			#election_image img {
+			  padding: 1px;
+			  z-index: 0;
+			  opacity: 0;
+			}
+			#inner_window_1 {
+			  margin: 1em;
+			}
+
+.person_summary ul {
+                display: flex;
+                flex-flow: column;
+                padding: 0;
+                margin: 0;
+            }
+
+            .person_summary li {
+                padding-bottom: .5em;
+                margin: .5em 0 0 0;
+                border-bottom: 1px solid rgba(44, 62, 80, 0.2);
+                color: #2c3e50;
+            }
+
+            .person_summary li:last-child {
+                border-bottom: none;
+            }
+
+.person_summary ul {
+                list-style: none;
+            }
+
+.person_summary li::before {
+                content: "+ ";
+                color: #3498db;
+                font-weight: bold;
+            }
+
+#visit_window {
+  height: auto;
+}
+
+.campaign_trail_start_emphasis {
+  background: none;
+}
+
+#election_description_window, .description_window_small {
+  border: 3px #2e2e2e ;
+}
+
+@font-face {
+  font-family: 'Plymouth Serial Heavy';
+  src: url('https://raw.githubusercontent.com/helpmeihatecapchtas/okie/main/plymouth-serial-heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Plymouth Serial Heavy', sans-serif;
+}
+
+.game_header {
+        padding: 0px;
+        border-color: #1c58b7;
+        background-color: #1c58b7;
+      }
+
+.container {
+    border-color: #1c58b7;
+      }
+      .content_single {
+    border-color: #1c58b7;
+      }
+      .footer {
+    border-color: #1c58b7;
+      }
+       .footer hr {
+    border-color: #1c58b7;
+      }
+
+      #candidate_description_window {
+        background-color: #ffffffff;
+        height: 300px;
+    border-color: #1c58b7;
+    border-width: 2px;
+    border-style: solid;
+    border-image: initial;
+      }
+
+      #running_mate_description_window {
+        background-color: #ffffffff;
+        height: 300px;
+    border-color: #1c58b7;
+    border-width: 2px;
+    border-style: solid;
+    border-image: initial;
+      }
+
+#candidate_image {
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 300px;
+    width: 300px;
+    background-image:
+      linear-gradient(to right, transparent, #ffffffff),
+      url('https://images2.imgbox.com/fd/dc/LILunndD_o.png');
+    background-size: cover;
+    z-index: 1;
+    border: none;
+    outline: none;
+}
+
+#candidate_image img {
+    padding: 1px 1px;
+    border: 1px solid #C9C9C9;
+    z-index: 0;
+    opacity: 0;
+}
+
+#running_mate_image {
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+#running_mate_image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, transparent, #ffffffff);
+    z-index: 2;
+}
+
+#running_mate_image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#running_mate_description_window {
+	height: 300px;
+}
+
+button:not(.player-control-button), .btn, .is-info, .is-success, .is-primary, .is-secondary {
+    box-sizing: border-box;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #063889;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f2f4f9;
+    border: 1px solid #063889;
+    transition: all 0.2s ease;
+}
+
+button:not(.player-control-button):hover, .btn:hover, .is-info:hover, .is-success:hover, .is-primary:hover, .is-secondary:hover {
+    background: #f2f4f9;
+    transform: translateY(-5px);
+}
+
+button:not(.player-control-button).small, .btn.small {
+    padding: 6px 16px;
+    font-size: 13px;
+}
+
+        `;
+        document.head.appendChild(style);
+    }
+
+// Psst: this is for replacing the site_description with this custom modal.
+(() => {
+    const CONFIG = {
+        imageSrc: 'https://images2.imgbox.com/81/83/WVzxU5tr_o.png',
+        margin: '-20px',
+        widthCalc: 'calc(100% - 30px)',
+    };
+
+    (function addPrologueBorder() {
+        const id = 'prologue-border-style';
+        if (document.getElementById(id)) return;
+        const s = document.createElement('style');
+        s.id = id;
+        s.textContent = `
+            #inner_window_1 {
+                box-sizing: border-box;
+                border: 4px solid #959de5ff;
+                border-radius: 8px;
+                padding: 8px;
+                background: #fffbf0ff;
+            }
+        `;
+        document.head.appendChild(s);
+    })();
+
+    const inner = document.getElementById('inner_window_1');
+    if (!inner || inner.children.length < 3) return;
+    const [headingEl, contentEl] = inner.children;
+    const gameStart = document.getElementById('game_start');
+    const gameWindow = document.getElementById('game_window');
+
+    if (gameWindow) gameWindow.style.height = 'auto';
+
+    headingEl.innerHTML = `<h3 style="font-size: 40px; font-family: Times New Roman; color: #23278e; letter-spacing: 4px"><i>A Feeling Like No Other.</i></h3>`;
+    Object.assign(contentEl.style, { marginLeft: CONFIG.margin, width: CONFIG.widthCalc });
+    contentEl.innerHTML = generatePrologueHTML(CONFIG);
+
+    Object.assign(contentEl.style, { 
+    marginLeft: CONFIG.margin, 
+    width: CONFIG.widthCalc, 
+    color: 'black'
+});
+
+    if (gameStart) {
+        gameStart.innerHTML = '<strong>I must act quick.</strong>';
+        const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
+        if (window.jQuery) $('#game_start').on('click', clearHeight);
+        else gameStart.addEventListener('click', clearHeight);
+    }
+
+    function generatePrologueHTML({ imageSrc }) {
+        return `
+      <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+        <img src="${imageSrc}" alt="alt text" style="max-width: 100%; height: auto; display: block;" />
+      </div>
+      <p>
+        <div style='text-decoration: color: #000000ff; font-family: Segoe UI; font-style: italic; font-size: 18px;'>I had been sitting in your room alone for the past few hours. Biden's post about his decision to not run for re-election was expected, it’s not like he could hide party disunity from me anyways. His old, running mouth always leaks a thing or too.
+      </p>
+      <p>
+        I also tried calling Gavin earlier, he said he’ll call later, but knowing him, he’ll never call back. He’s probably somewhere prepping for his campaign by now, what a ruthless idiot. At least the cabinet trusts me in full, probably because I’ve de-facto led the presidency for the last 4 years, while Biden sat around with his ice cream button of course. Still, I hoped for a more organized and careful campaign, instead of the emergency one propped up right now. 2028 would’ve been a good year, and if Trump ran, it’d be a sweep.
+      </p>
+    <p>
+        But, I can’t really complain, since if Biden ran, I’d have no chance to run in 2028. But on the bad side, it’s now my problem to defeat Trump and with only 107 days,</div>
+    `;
+    }
+
+})();
+
+}
+
+appendStyle();
+
+
+
+function ensureStylesheet(url, id) {
+	if (id && document.getElementById(id)) {
+        if (id === 'unpkg-7css') {
+            const link = document.getElementById(id);
+if (link) link.remove();
+            return; 
+        }
+        return;
+    }
+	if (document.querySelector('link[rel="stylesheet"][href="' + url + '"]')) return;
+const link = document.createElement('link');
+	link.rel = 'stylesheet';
+	link.href = url;
+	if (id) link.id = id;
+	document.head.appendChild(link);
+}
+
+
+
+function ensureMetaViewport() {
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const m = document.createElement('meta');
+        m.name = 'viewport';
+        m.content = 'width=device-width, initial-scale=1';
+        document.head.appendChild(m);
+    }
+}
+
+applyGlobalStyles.sheets = {};
+
+function applyGlobalStyles(css, id = 'app-theme') {
+    if ('adoptedStyleSheets' in document && 'replaceSync' in CSSStyleSheet.prototype) {
+        if (!applyGlobalStyles.sheets[id]) {
+            applyGlobalStyles.sheets[id] = new CSSStyleSheet();
+            document.adoptedStyleSheets = [...document.adoptedStyleSheets, applyGlobalStyles.sheets[id]];
+        }
+        applyGlobalStyles.sheets[id].replaceSync(css);
+        return;
+    }
+
+    let el = document.getElementById(id);
+    if (!el) {
+        el = document.createElement('style');
+        el.id = id;
+        document.head.appendChild(el);
+    }
+    el.textContent = css;
+}
+
+
+class Song {
+  constructor(title, artist, coverLink, audioLink) {
+    this.title = title;
+    this.artist = artist;
+    this.coverLink = coverLink;
+    this.audioLink = audioLink;
+  }
+  getTitle() { return this.title; }
+  getArtist() { return this.artist; }
+  getCoverLink() { return this.coverLink; }
+  getAudioLink() { return this.audioLink; }
+}
+
+class Playlist {
+  constructor() {
+    this.songs = [];
+    this.currentSongIndex = 0;
+  }
+
+  addSong(song) { this.songs.push(song); }
+  getCurrentSong() { return this.songs[this.currentSongIndex]; }
+
+  playNext() {
+    this.currentSongIndex = (this.currentSongIndex + 1) % this.songs.length;
+  }
+
+  playPrevious() {
+    this.currentSongIndex = (this.currentSongIndex - 1 + this.songs.length) % this.songs.length;
+  }
+}
+window.Playlist = Playlist;
+window.Song = Song;
+
+function changePlaylist(newPlaylist) {
+  playlist = newPlaylist;
+  playlist.currentSongIndex = 0;
+  updateUI(playlist);
+  const audio = document.getElementById("audio");
+  audio.src = playlist.getCurrentSong().audioLink;
+  audio.play();
+}
+window.changePlaylist = changePlaylist;
+
+function updateUI(playlist) {
+  const currentSong = playlist.getCurrentSong();
+  const player = document.getElementById("player");
+  player.querySelector("#cover").src = currentSong.getCoverLink();
+  player.querySelector("#title").textContent = currentSong.getTitle();
+  player.querySelector("#artist").textContent = currentSong.getArtist();
+}
+window.updateUI = updateUI;
+
+function setupMusicPlayer() {
+  playlist = new Playlist();
+
+  const songs = [
+    new Song("Freedom", "Beyonce", "https://images2.imgbox.com/d4/99/UQqU1kHP_o.png", "https://audio.jukehost.co.uk/Z8lWIiKMEyGn7IQOEVxL7SxxSRw7qgSJ"),
+  ];
+  songs.forEach(s => playlist.addSong(s));
+
+  const playerContainer = document.createElement("div");
+  playerContainer.id = "player";
+
+  const displayBox = document.createElement("div");
+  displayBox.id = "display-box";
+
+  const coverElement = document.createElement("img");
+  coverElement.id = "cover";
+  displayBox.appendChild(coverElement);
+
+  const infoContainer = document.createElement("div");
+  infoContainer.id = "info-container";
+
+  const titleElement = document.createElement("h3");
+  titleElement.id = "title";
+
+  const artistElement = document.createElement("p");
+  artistElement.id = "artist";
+
+  infoContainer.appendChild(titleElement);
+  infoContainer.appendChild(artistElement);
+  displayBox.appendChild(infoContainer);
+  playerContainer.appendChild(displayBox);
+
+  const controlsContainer = document.createElement("div");
+  controlsContainer.id = "controls-container";
+
+  const controls = document.createElement("div");
+  controls.id = "controls";
+
+  const prevButton = document.createElement("button");
+  prevButton.id = "prevButton";
+  prevButton.textContent = "⏮";
+
+  const playPauseButton = document.createElement("button");
+  playPauseButton.id = "playPauseButton";
+  playPauseButton.textContent = "▶";
+
+  const nextButton = document.createElement("button");
+  nextButton.id = "nextButton";
+  nextButton.textContent = "⏭";
+
+  controls.appendChild(prevButton);
+  controls.appendChild(playPauseButton);
+  controls.appendChild(nextButton);
+  controlsContainer.appendChild(controls);
+
+  // progress bar (custom div)
+  const progressBarContainer = document.createElement("div");
+  progressBarContainer.id = "progress-bar-container";
+  const progressBar = document.createElement("div");
+  progressBar.id = "progress-bar";
+  progressBarContainer.appendChild(progressBar);
+  controlsContainer.appendChild(progressBarContainer);
+  playerContainer.appendChild(controlsContainer);
+
+  const volumeContainer = document.createElement("div");
+  volumeContainer.id = "volume-container";
+  const volumeSlider = document.createElement("input");
+  volumeSlider.type = "range";
+  volumeSlider.id = "volumeSlider";
+  volumeSlider.min = 0;
+  volumeSlider.max = 9;
+  volumeSlider.step = 1;
+  volumeSlider.value = 1;
+  volumeContainer.appendChild(volumeSlider);
+  playerContainer.appendChild(volumeContainer);
+
+  gameWindow_player.insertAdjacentElement("afterend", playerContainer);
+
+  const audio = document.createElement("audio");
+  audio.id = "audio";
+  audio.src = playlist.getCurrentSong().audioLink;
+  audio.volume = 1 / 9;
+  document.body.appendChild(audio);
+  audio.play();
+
+  // logic
+  playPauseButton.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      playPauseButton.textContent = "⏸";
+    } else {
+      audio.pause();
+      playPauseButton.textContent = "▶";
+    }
+  });
+
+  nextButton.addEventListener("click", () => {
+    playlist.playNext();
+    updateUI(playlist);
+    audio.src = playlist.getCurrentSong().audioLink;
+    audio.play();
+    playPauseButton.textContent = "⏸";
+  });
+
+  prevButton.addEventListener("click", () => {
+    playlist.playPrevious();
+    updateUI(playlist);
+    audio.src = playlist.getCurrentSong().audioLink;
+    audio.play();
+    playPauseButton.textContent = "⏸";
+  });
+
+  audio.addEventListener("timeupdate", () => {
+    const progress = (audio.currentTime / audio.duration) * 100;
+    progressBar.style.width = progress + "%";
+  });
+
+  volumeSlider.addEventListener("input", () => {
+    audio.volume = volumeSlider.value / 9;
+  });
+
+  updateUI(playlist);
+}
+
+const style = document.createElement("style");
+style.textContent = `
+  #player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #e6f0ff, #c2d8ff);
+    border-radius: 18px;
+    border: 1px solid #c7d6ff;
+    box-shadow: 0 4px 20px rgba(50, 90, 180, 0.1);
+    padding: 14px 20px;
+    height: 190px;
+    color: #1f2a44;
+    font-family: "Inter", sans-serif;
+  }
+
+  #display-box {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    gap: 14px;
+  }
+
+  #cover {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  }
+
+  #info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1b2a4b;
+    margin-bottom: 4px;
+  }
+
+  #artist {
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  #controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    height: 100%;
+  }
+
+  #controls {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+  }
+
+#controls button {
+  background: white;          
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1c58b7;
+  transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 50%;          
+  width: 48px;                 
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#controls button:hover {
+  transform: scale(1.15);
+  color: #1c58b7;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+  #progress-bar-container {
+    width: 80%;
+    height: 8px;
+    background: #ffffffff;
+    border-radius: 6px;
+    margin-bottom: 50px;
+  }
+
+  #progress-bar {
+    height: 100%;
+    background: #1c58b7;
+    border-radius: 6px;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
+
+  #volume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #volumeSlider {
+    appearance: none;
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background: #a8c4ff;
+    outline: none;
+  }
+
+  #volumeSlider::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #1c58b7;
+    cursor: pointer;
+  }
+`;
+document.head.appendChild(style);
+
+const gameWindow_player = document.getElementById("game_window");
+setupMusicPlayer();
+
+//#endcode
+
+tooltipList = [
+  {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/PUT IMGUR LINK HERE> Put the Text Here"},
+  {searchString: "Placeholder 2", explanationText: "<img src=https://i.imgur.com/PUT IMGUR LINK HERE> Put the Text Here"}
+];
 
 //#endcode
