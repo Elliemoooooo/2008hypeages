@@ -953,13 +953,15 @@ function updateUI(playlist) {
 }
 window.updateUI = updateUI;
 
-function setupMusicPlayer() {
+ function setupMusicPlayer() {
   playlist = new Playlist();
 
   const songs = [
-    new Song("The Less I Know The Better", "Tame Impala", "https://imgbox.com/52H8SgHp", "https://audio.jukehost.co.uk/yW6mpR3SsdLBgBN60bdipBzyZS3sii07"),
-  ];
-    new Song("Freedom", "Beyonce", "https://images2.imgbox.com/d4/99/UQqU1kHP_o.png", "https://audio.jukehost.co.uk/Z8lWIiKMEyGn7IQOEVxL7SxxSRw7qgSJ"),
+    new Song("The Less I Know The Better", "Tame Impala", "https://file.garden/Z5ZdT2XMBSWGuJym/tame", "https://audio.jukehost.co.uk/yW6mpR3SsdLBgBN60bdipBzyZS3sii07"),
+    new Song("No Ties", "Xiao Xiao", "https://images2.imgbox.com/16/9d/4XGAIUwM_o.png", "https://audio.jukehost.co.uk/5OVM75vLGAVBSkiP2F8Vln7CcWQdfxDQ"),
+    new Song("Yang Gang", "Ollie B and Max Ray", "https://images2.imgbox.com/43/54/jZKD9YG2_o.png", "https://audio.jukehost.co.uk/JXKBv1ZGVV3By9MsF3ekr0O6uUDe3k6X"),
+    new Song("Fight as One", "Eason Chan & Jolin Tsai", "https://images2.imgbox.com/96/94/wKBQVcuh_o.png", "https://audio.jukehost.co.uk/R5yUAGJa0nTtdzywhDhrJiM7iAEINNRlT"),
+    new Song("Buddy Holly", "Weezer", "https://images2.imgbox.com/a2/d6/8QdNz1S7_o.png", "https://audio.jukehost.co.uk/eWMsA6rGr8eoY1oNC9Wdazn2er4JkQFb"),
   ];
   songs.forEach(s => playlist.addSong(s));
 
